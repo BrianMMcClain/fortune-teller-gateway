@@ -1,8 +1,9 @@
 ---
 applications:
-- name: gateway
+- name: fortune
   memory: 1G
   path: target/oss-scg-demo-0.0.1-SNAPSHOT.jar
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
-    GATEWAY_DOMAIN: 'http://spring-music.apps.internal:8080'
+    API_DOMAIN: 'http://fortune-service.apps.claremont.cf-app.com'
+    UI_DOMAIN: 'http://fortune-ui.apps.claremont.cf-app.com'
