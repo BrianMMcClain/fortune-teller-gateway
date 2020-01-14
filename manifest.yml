@@ -1,0 +1,8 @@
+---
+applications:
+- name: gateway
+  memory: 1G
+  path: target/oss-scg-demo-0.0.1-SNAPSHOT.jar
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    GATEWAY_DOMAIN: 'http://spring-music.apps.internal:8080'
