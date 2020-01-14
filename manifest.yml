@@ -7,3 +7,7 @@ applications:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     API_DOMAIN: 'http://fortune-service.apps.claremont.cf-app.com'
     UI_DOMAIN: 'http://fortune-ui.apps.claremont.cf-app.com'
+    SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_SSO_AUTHORIZATIONGRANTTYPE: authorization_code
+    SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_SSO_SCOPE: openid
+  services:
+    - uaa-sso
